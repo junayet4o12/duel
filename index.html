@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUEL</title>
+    
+    <!-- tailwind daisyui khala -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/e64b8def37.js" crossorigin="anonymous"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+
+
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- css -->
+    <style>
+        .web1 > .lato {
+            font-family: 'Lato', sans-serif;
+        }
+
+      .web >  ::placeholder {
+            font-size: 14px;
+            font-weight: bolder;
+
+
+
+        }
+
+      .web1 >  ::-ms-input-placeholder {
+            font-size: 14px;
+            font-weight: bold;
+
+
+
+        }
+
+
+
+
+
+
+        .secondweb > .EB-Garamond,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'EB Garamond', serif;
+        }
+
+       .secondweb > .poppins,
+        p,
+        ul,
+        li,
+        a {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .secondweb > ::placeholder {
+            font-size: 12px;
+            color: #A0A0A0;
+            font-family: 'Poppins', sans-serif;
+
+        }
+    </style>
+
+</head>
+
+<body class="container max-w-screen-xl m-auto">
+    <div class="web1 lato mb-10 hidden sm:block">
+    <header>
+        <!-- nav start -->
+        <nav class="container m-auto mb-7">
+            <div
+                class="navbar sm:rounded-[30px]  lg:rounded-[600px] bg-white sm:bg-[#F85559] py-3 lg:px-6  grid sm:grid-cols-1  lg:flex md:justify-around">
+
+                <div class="navbar-start hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="font-medium text-white hover:text-white">Home</a></li>
+                        <li><a class="font-medium text-white hover:text-white ">About Us</a></li>
+                        <li><a class="font-medium text-white hover:text-white">Shop</a></li>
+                        <li><a class="font-medium text-white hover:text-white">All Fruits</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar-center flex-row-reverse justify-between pb-3 lg:pb-0  lg:m-0">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden  mr-1 sm:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor ">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 ml-[-80px] z-[1] p-2 shadow bg-white sm:bg-[#F85559] rounded-box w-32">
+                            <li><a class="font-medium sm:text-white ">Home</a></li>
+                            <li><a class="font-medium sm:text-white  ">About Us</a></li>
+                            <li><a class="font-medium sm:text-white">Shop</a></li>
+                            <li><a class="font-medium sm:text-white">All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex gap-x-2 justify-center items-center lg:pr-28 xl:pr-52">
+                        <img class="h-12 w-11" src="images/logo.png" alt="">
+                        <h3 class="sm:text-white text-2xl font-bold">Fruit Burst</h3>
+                    </div>
+                </div>
+                <div class=" flex justify- items-center m-auto  lg:m-0 lg:justify-end lg:items-end ">
+
+                    <input type="text" placeholder="Search here"
+                        class=" p-3 rounded-[50px] border-[3px]  border-[#F85559]    text-black  bg-white w-[230px]   sm:w-[300px] " />
+
+                </div>
+
+            </div>
+        </nav>
+        <!-- nav end -->
+        <!-- banner start  -->
+        <section class="container m-auto px-3 sm:px-0">
+
+            <div class="carousel w-full h-[81.7vh] mt-8 rounded-2xl">
+                <!-- slider one -->
+                <div id="slide1"
+                    style="background-image: url('images/banner1.png'); background-repeat: no-repeat;  background-size:cover;  "
+                    class="carousel-item relative w-full ">
+                    <div style="height:100%; width: 100%; background-color: rgba(0, 0, 0, 0.578);" class="flex">
+                        <div class="flex flex-col justify-center items-center gap-y-4 m-auto  ">
+                            <h1 class="text-center text-4xl font-extrabold text-white sm:text-6xl">Exotic tastes at your
+                                <br> doorstep
+                            </h1>
+                            <p class="text-center text-base font-medium text-white">We supply highly quality organic
+                                products</p>
+                            <button
+                                class="btn bg-[#F85559] rounded-lg border-none text-white font-extrabold text-sm hover:bg-[#f00]">Shop
+                                Now</button>
+                        </div>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slider two -->
+                <div id="slide2"
+                    style="background-image: url('images/banner2.png'); background-repeat: no-repeat; background-size:cover;  "
+                    class="carousel-item relative w-full">
+
+                    <div style="height:100%; width: 100%; background-color: rgba(0, 0, 0, 0.578);" class="flex">
+                        <div class="flex flex-col justify-center items-center gap-y-4 m-auto  ">
+                            <h1 class="text-center text-4xl font-extrabold text-white sm:text-6xl">Exotic tastes at your
+                                <br> doorstep
+                            </h1>
+                            <p class="text-center text-base font-medium text-white">We supply highly quality organic
+                                products</p>
+                            <button
+                                class="btn bg-[#F85559] rounded-lg border-none text-white font-extrabold text-sm hover:bg-[#f00]">Shop
+                                Now</button>
+                        </div>
+                    </div>
+
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slider three -->
+                <div id="slide3"
+                    style="background-image: url('images/banner3.png'); background-repeat: no-repeat;  background-size:cover;  "
+                    class="carousel-item relative w-full">
+
+                    <div style="height:100%; width: 100%; background-color: rgba(0, 0, 0, 0.578);" class="flex">
+                        <div class="flex flex-col justify-center items-center gap-y-4 m-auto  ">
+                            <h1 class="text-center text-4xl font-extrabold text-white sm:text-6xl">Exotic tastes at your
+                                <br> doorstep
+                            </h1>
+                            <p class="text-center text-base font-medium text-white">We supply highly quality organic
+                                products</p>
+                            <button
+                                class="btn bg-[#F85559] rounded-lg border-none text-white font-extrabold text-sm hover:bg-[#f00]">Shop
+                                Now</button>
+                        </div>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slider 4  -->
+                <div id="slide4"
+                    style="background-image: url('images/banner4.png'); background-repeat: no-repeat;  background-size:cover;  "
+                    class="carousel-item relative w-full">
+
+
+                    <div style="height:100%; width: 100%; background-color: rgba(0, 0, 0, 0.578);" class="flex">
+                        <div class="flex flex-col justify-center items-center gap-y-4 m-auto  ">
+                            <h1 class="text-center text-4xl font-extrabold text-white sm:text-6xl">Exotic tastes at your
+                                <br> doorstep
+                            </h1>
+                            <p class="text-center text-base font-medium text-white">We supply highly quality organic
+                                products</p>
+                            <button
+                                class="btn bg-[#F85559] rounded-lg border-none text-white font-extrabold text-sm hover:bg-[#f00]">Shop
+                                Now</button>
+                        </div>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- banner End -->
+        <!-- banner extra start -->
+        <section class=" hidden sm:block">
+            <div
+                class="grid  justify-around  items-center bg-white gap-5 gap-y-7 mt-[-90px]  drop-shadow-xl w-max m-auto p-10 mb-10 sm:grid-cols-3 lg:grid-cols-5 ">
+                <!-- fruit 1 -->
+                <div class="flex flex-col justify-center items-center">
+                    <img class="h-[100px]" src="images/fruit1.png" alt="">
+                    <p class="text-center text-[#121212cc] text-base font-medium">Grap</p>
+                </div>
+                <!-- fruit 2 -->
+                <div class="flex flex-col justify-center items-center">
+                    <img class="h-[100px]" src="images/fruit2.png" alt="">
+                    <p class="text-center text-[#121212cc] text-base font-medium">Orange</p>
+                </div>
+                <!-- fruit 3 -->
+                <div class="flex flex-col justify-center items-center">
+                    <img class="h-[100px]" src="images/fruit3.png" alt="">
+                    <p class="text-center text-[#121212cc] text-base font-medium">Mango</p>
+                </div>
+                <!-- fruit 4 -->
+                <div class="flex flex-col justify-center items-center">
+                    <img class="h-[100px]" src="images/fruit4.png" alt="">
+                    <p class="text-center text-[#121212cc] text-base font-medium">Strawberry</p>
+                </div>
+                <!-- fruit 5 -->
+                <div class="flex flex-col justify-center items-center ">
+                    <img class="h-[100px]" src="images/fruit5.png" alt="">
+                    <p class="text-center text-[#121212cc] text-base font-medium">Pomegranate</p>
+                </div>
+
+            </div>
+        </section>
+        <!-- banner extra end -->
+    </header>
+    <main>
+        <!-- deal time start -->
+        <section class="container m-auto flex flex-col gap-y-7">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-10 px-5 md:px-10 lg:px-20 mt-20">
+                <div class="">
+                    <h1 class=" text-[#121212] text-3xl font-extrabold text-center mb-4 md:text-left">Deal of the day
+                    </h1>
+                    <p class="text-[#121212cc] text-sm font-medium max-w-[600px] text-center md:text-left">Contrary to
+                        popular belief, is not simply random
+                        text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000
+                        years old.</p>
+                </div>
+                <div class="">
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                        <div class="flex flex-col p-2 bg-white text-black rounded-box text-neutral-content">
+                            <span class="countdown font-mono text-3xl sm:text-5xl">
+                                <span style="--value:15;"></span>
+                            </span>
+                            days
+                        </div>
+                        <div class="flex flex-col p-2 bg-white text-black rounded-box text-neutral-content">
+                            <span class="countdown font-mono text-3xl sm:text-5xl">
+                                <span style="--value:10;"></span>
+                            </span>
+                            hours
+                        </div>
+                        <div class="flex flex-col p-2 bg-white text-black rounded-box text-neutral-content">
+                            <span class="countdown font-mono text-3xl sm:text-5xl">
+                                <span style="--value:24;"></span>
+                            </span>
+                            min
+                        </div>
+                        <div class="flex flex-col p-2 bg-white text-black rounded-box text-neutral-content">
+                            <span class="countdown font-mono text-3xl sm:text-5xl">
+                                <span style="--value:35;"></span>
+                            </span>
+                            sec
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap px-4 justify-center gap-x-7 gap-y-7 items-center">
+                <!-- modal one -->
+
+                <div  
+                class="border-[1px] rounded-lg border-[#12121299] py-5 px-14 w-max flex flex-col justify-center  items-center gap-2 shadow-2xl hover:bg-[#7e7a7a0d] ">
+                    <img class="mb-4 h-28" src="images/fruit6.png" alt="">
+                    <h1 class="text-[#121212] text-center text-xl font-bold mb-2">12.90$ - 18.85$</h1>
+                    <hr class="w-[100%] border-[#00000073] mb-2">
+                    <p class="text-[#12121299] text-center text-sm font-medium mb-2">Apples</p>
+
+                    <p class="text-[#f85559] mb-2">
+                        <div class="rating">
+                            <input type="radio" name="rating-1" class="mask mask-star bg-[#f85559]" />
+                            <input type="radio" name="rating-1" class="mask mask-star bg-[#f85559]" checked />
+                            <input type="radio" name="rating-1" class="mask mask-star bg-[#f85559]" />
+                            <input type="radio" name="rating-1" class="mask mask-star bg-[#f85559]" />
+                            <input type="radio" name="rating-1" class="mask mask-star bg-[#f85559]" />
+                          </div>
+
+                    </p>
+
+                    <button
+                        class="btn bg-transparent border-none text-center text-[#f85559] text-sm font-bold rounded-r-lg hover:bg-[#f85559] hover:text-white"
+                        onclick="my_modal_1.showModal()">Details</button>
+                </div>
+                <dialog id="my_modal_1" class="modal">
+                    <form method="dialog" class="modal-box max-w-max flex flex-col justify-center items-center">
+                        <img class="mb-4" src="images/fruit6.png" alt="">
+                        <h1 class="text-[#121212] text-2xl font-extrabold text-center">Apple</h1>
+                        <p class="text-[#12121299] text-sm font-medium text-center max-w-[320px] p-4">Professional
+                            employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <p class="text-[#f85559] mb-2 text-center">
+                            <div class="rating">
+                                <input type="radio" name="rating-1" class="mask mask-star bg-[#f85559]" />
+                                <input type="radio" name="rating-1" class="mask mask-star bg-[#f85559]" checked />
+                                <input type="radio" name="rating-1" class="mask mask-star bg-[#f85559]" />
+                                <input type="radio" name="rating-1" class="mask mask-star bg-[#f85559]" />
+                                <input type="radio" name="rating-1" class="mask mask-star bg-[#f85559]" />
+                              </div>
+
+                        </p>
+                        <div class="modal-action">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button
+                                class="btn bg-transparent border-[1px] border-[#f85559] text-center text-[#f85559] text-sm font-bold rounded-r-lg hover:bg-[#f85559] hover:text-white">Close</button>
+                            <button
+                                class="btn bg-[#f85559] text-white  border-[1px] border-[#f85559] text-center  text-sm font-bold rounded-r-lg hover:bg-transparent hover:text-[#f85559] hover:border-[#f85559]">Buy
+                                Now</button>
+                        </div>
+                    </form>
+                </dialog>
+                <!-- modal two -->
+                <div
+                    class="border-[1px] rounded-lg border-[#12121299] py-5 px-14 w-max flex flex-col justify-center items-center gap-2 shadow-2xl hover:bg-[#7e7a7a0d]">
+                    <img class="mb-4 h-28" src="images/fruit7.png" alt="">
+                    <h1 class="text-[#121212] text-center text-xl font-bold mb-2">12.90$ - 18.85$</h1>
+                    <hr class="w-[100%] border-[#00000073] mb-2">
+                    <p class="text-[#12121299] text-center text-sm font-medium mb-2">Orange</p>
+
+                    <p class="text-[#f85559] mb-2">
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star bg-[#f85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star bg-[#f85559]" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star bg-[#f85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star bg-[#f85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star bg-[#f85559]" />
+                          </div>
+                    </p>
+
+                    <button
+                        class="btn bg-transparent border-none text-center text-[#f85559] text-sm font-bold rounded-r-lg hover:bg-[#f85559] hover:text-white"
+                        onclick="my_modal_2.showModal()">Details</button>
+                </div>
+                <dialog id="my_modal_2" class="modal">
+                    <form method="dialog" class="modal-box max-w-max flex flex-col justify-center items-center">
+                        <img class="mb-4" src="images/fruit7.png" alt="">
+                        <h1 class="text-[#121212] text-2xl font-extrabold text-center">Orange</h1>
+                        <p class="text-[#12121299] text-sm font-medium text-center max-w-[320px] p-4">Professional
+                            employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <p class="text-[#f85559] mb-2 text-center">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star bg-[#f85559]" />
+                                <input type="radio" name="rating-2" class="mask mask-star bg-[#f85559]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star bg-[#f85559]" />
+                                <input type="radio" name="rating-2" class="mask mask-star bg-[#f85559]" />
+                                <input type="radio" name="rating-2" class="mask mask-star bg-[#f85559]" />
+                              </div>
+                        </p>
+                        <div class="modal-action">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button
+                                class="btn bg-transparent border-[1px] border-[#f85559] text-center text-[#f85559] text-sm font-bold rounded-r-lg hover:bg-[#f85559] hover:text-white">Close</button>
+                            <button
+                                class="btn bg-[#f85559] text-white  border-[1px] border-[#f85559] text-center  text-sm font-bold rounded-r-lg hover:bg-transparent hover:text-[#f85559] hover:border-[#f85559]">Buy
+                                Now</button>
+                        </div>
+                    </form>
+                </dialog>
+                <!-- modal three -->
+                <div
+                    class="border-[1px] rounded-lg border-[#12121299] py-5 px-14 w-max flex flex-col justify-center items-center gap-2 shadow-2xl hover:bg-[#7e7a7a0d]">
+                    <img class="mb-4 h-28" src="images/fruit8.png" alt="">
+                    <h1 class="text-[#121212] text-center text-xl font-bold mb-2">12.90$ - 18.85$</h1>
+                    <hr class="w-[100%] border-[#00000073] mb-2">
+                    <p class="text-[#12121299] text-center text-sm font-medium mb-2">Red Dragon</p>
+
+                    <p class="text-[#f85559] mb-2">
+                        <div class="rating">
+                            <input type="radio" name="rating-3" class="mask mask-star bg-[#f85559]" />
+                            <input type="radio" name="rating-3" class="mask mask-star bg-[#f85559]" checked />
+                            <input type="radio" name="rating-3" class="mask mask-star bg-[#f85559]" />
+                            <input type="radio" name="rating-3" class="mask mask-star bg-[#f85559]" />
+                            <input type="radio" name="rating-3" class="mask mask-star bg-[#f85559]" />
+                          </div>
+
+                    </p>
+
+                    <button
+                        class="btn bg-transparent border-none text-center text-[#f85559] text-sm font-bold rounded-r-lg hover:bg-[#f85559] hover:text-white"
+                        onclick="my_modal_3.showModal()">Details</button>
+                </div>
+                <dialog id="my_modal_3" class="modal">
+                    <form method="dialog" class="modal-box max-w-max flex flex-col justify-center items-center">
+                        <img class="mb-4" src="images/fruit8.png" alt="">
+                        <h1 class="text-[#121212] text-2xl font-extrabold text-center">Red Dragon</h1>
+                        <p class="text-[#12121299] text-sm font-medium text-center max-w-[320px] p-4">Professional
+                            employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <p class="text-[#f85559] mb-2 text-center">
+                            <div class="rating">
+                                <input type="radio" name="rating-3" class="mask mask-star bg-[#f85559]" />
+                                <input type="radio" name="rating-3" class="mask mask-star bg-[#f85559]" checked />
+                                <input type="radio" name="rating-3" class="mask mask-star bg-[#f85559]" />
+                                <input type="radio" name="rating-3" class="mask mask-star bg-[#f85559]" />
+                                <input type="radio" name="rating-3" class="mask mask-star bg-[#f85559]" />
+                              </div>
+
+                        </p>
+                        <div class="modal-action">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button
+                                class="btn bg-transparent border-[1px] border-[#f85559] text-center text-[#f85559] text-sm font-bold rounded-r-lg hover:bg-[#f85559] hover:text-white">Close</button>
+                            <button
+                                class="btn bg-[#f85559] text-white  border-[1px] border-[#f85559] text-center  text-sm font-bold rounded-r-lg hover:bg-transparent hover:text-[#f85559] hover:border-[#f85559]">Buy
+                                Now</button>
+                        </div>
+                    </form>
+                </dialog>
+                <!-- modal four -->
+                <div
+                    class="border-[1px] rounded-lg border-[#12121299] py-5 px-14 w-max flex flex-col justify-center items-center gap-2 shadow-2xl hover:bg-[#7e7a7a0d]">
+                    <img class="mb-4 h-28" src="images/fruit9.png" alt="">
+                    <h1 class="text-[#121212] text-center text-xl font-bold mb-2">12.90$ - 18.85$</h1>
+                    <hr class="w-[100%] border-[#00000073] mb-2">
+                    <p class="text-[#12121299] text-center text-sm font-medium mb-2">Banana</p>
+
+                    <p class="text-[#f85559] mb-2">
+                        <div class="rating">
+                            <input type="radio" name="rating-4" class="mask mask-star bg-[#f85559]" />
+                            <input type="radio" name="rating-4" class="mask mask-star bg-[#f85559]" checked />
+                            <input type="radio" name="rating-4" class="mask mask-star bg-[#f85559]" />
+                            <input type="radio" name="rating-4" class="mask mask-star bg-[#f85559]" />
+                            <input type="radio" name="rating-4" class="mask mask-star bg-[#f85559]" />
+                          </div>
+
+                    </p>
+
+                    <button
+                        class="btn bg-transparent border-none text-center text-[#f85559] text-sm font-bold rounded-r-lg hover:bg-[#f85559] hover:text-white"
+                        onclick="my_modal_4.showModal()">Details</button>
+                </div>
+                <dialog id="my_modal_4" class="modal">
+                    <form method="dialog" class="modal-box max-w-max flex flex-col justify-center items-center">
+                        <img class="mb-4" src="images/fruit9.png" alt="">
+                        <h1 class="text-[#121212] text-2xl font-extrabold text-center">Banana</h1>
+                        <p class="text-[#12121299] text-sm font-medium text-center max-w-[320px] p-4">Professional
+                            employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <p class="text-[#f85559] mb-2 text-center">
+                            <div class="rating">
+                                <input type="radio" name="rating-4" class="mask mask-star bg-[#f85559]" />
+                                <input type="radio" name="rating-4" class="mask mask-star bg-[#f85559]" checked />
+                                <input type="radio" name="rating-4" class="mask mask-star bg-[#f85559]" />
+                                <input type="radio" name="rating-4" class="mask mask-star bg-[#f85559]" />
+                                <input type="radio" name="rating-4" class="mask mask-star bg-[#f85559]" />
+                              </div>
+                        </p>
+                        <div class="modal-action">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button
+                                class="btn bg-transparent border-[1px] border-[#f85559] text-center text-[#f85559] text-sm font-bold rounded-r-lg hover:bg-[#f85559] hover:text-white">Close</button>
+                            <button
+                                class="btn bg-[#f85559] text-white  border-[1px] border-[#f85559] text-center  text-sm font-bold rounded-r-lg hover:bg-transparent hover:text-[#f85559] hover:border-[#f85559]">Buy
+                                Now</button>
+                        </div>
+                    </form>
+                </dialog>
+            </div>
+
+            <button
+                class=" w-max m-auto  btn bg-[#f85559] text-white  border-[1px] border-[#f85559] text-center  text-xs py-3 px-6 font-bold rounded-lg hover:bg-transparent hover:text-[#f85559] hover:border-[#f85559]">Shop
+                All</button>
+
+        </section>
+        <!-- deal time end -->
+        <!-- clien start -->
+        <section class="container m-auto">
+            <div
+                style="background-image: url('images/team.png'); background-repeat: no-repeat; background-size: cover; margin-top: 28px;">
+                <div style="height: 100%; width: 100%; background-color: rgba(18, 18, 18, 0.70);" class="py-20">
+                    <h1 class="text-white text-center text-3xl font-extrabold mb-4">Meet the team section</h1>
+                    <p class="text-white text-center text-sm font-medium mb-4 px-4 max-w-[700px] m-auto">Contrary to
+                        popular belief, is not simply random text. It has roots in a piece of classical Latin literature
+                        from 45 BC, making it over 2000 years old.</p>
+
+                    <div class="flex justify-center flex-wrap items-center  gap-x-32">
+                        <!-- client 1 -->
+                        <div class="space-y-4 py-4">
+                            <img class="m-auto" src="images/member1.png" alt="">
+                            <h1 class="text-white text-center font-bold text-xl">Awlad Hossain</h1>
+                            <p class="text-white text-center text-sm font-medium">Fruits Expert</p>
+                            <div class="flex gap-x-4 justify-center items-center">
+                                <p
+                                    class="w-7 h-7 rounded-full text-2xl text-white bg-[#f85559] hover:bg-[#ff0004] text-center">
+                                    <a class=" " href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                </p>
+                                <p
+                                    class="w-7 h-7 rounded-full text-xl text-white bg-[#f85559] hover:bg-[#ff0004] text-center">
+                                    <a class=" " href=""><i class="fa-brands fa-twitter"></i></a>
+                                </p>
+                                <p
+                                    class="w-7 h-7 rounded-full text-xl text-white bg-[#f85559] hover:bg-[#ff0004] text-center">
+                                    <a class=" " href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- client 2 -->
+                        <div class="space-y-4 py-4">
+                            <img class="m-auto" src="images/member2.png" alt="">
+                            <h1 class="text-white text-center font-bold text-xl">Safia Chowdhury</h1>
+                            <p class="text-white text-center text-sm font-medium">Fruits Expert</p>
+                            <div class="flex gap-x-4 justify-center items-center">
+                                <p
+                                    class="w-7 h-7 rounded-full text-2xl text-white bg-[#f85559] hover:bg-[#ff0004] text-center">
+                                    <a class=" " href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                </p>
+                                <p
+                                    class="w-7 h-7 rounded-full text-xl text-white bg-[#f85559] hover:bg-[#ff0004] text-center">
+                                    <a class=" " href=""><i class="fa-brands fa-twitter"></i></a>
+                                </p>
+                                <p
+                                    class="w-7 h-7 rounded-full text-xl text-white bg-[#f85559] hover:bg-[#ff0004] text-center">
+                                    <a class=" " href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- client 3 -->
+                        <div class="space-y-4 py-4">
+                            <img class="m-auto" src="images/member3.png" alt="">
+                            <h1 class="text-white text-center font-bold text-xl">Rokib Hossain</h1>
+                            <p class="text-white text-center text-sm font-medium">Fruits Expert</p>
+                            <div class="flex gap-x-4 justify-center items-center">
+                                <p
+                                    class="w-7 h-7 rounded-full text-2xl text-white bg-[#f85559] hover:bg-[#ff0004] text-center">
+                                    <a class=" " href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                </p>
+                                <p
+                                    class="w-7 h-7 rounded-full text-xl text-white bg-[#f85559] hover:bg-[#ff0004] text-center">
+                                    <a class=" " href=""><i class="fa-brands fa-twitter"></i></a>
+                                </p>
+                                <p
+                                    class="w-7 h-7 rounded-full text-xl text-white bg-[#f85559] hover:bg-[#ff0004] text-center">
+                                    <a class=" " href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- client 4 -->
+                        <div class="space-y-4 py-4">
+                            <img class="m-auto" src="images/member4.png" alt="">
+                            <h1 class="text-white text-center font-bold text-xl">Chaity</h1>
+                            <p class="text-white text-center text-sm font-medium">Fruits Expert</p>
+                            <div class="flex gap-x-4 justify-center items-center">
+                                <p
+                                    class="w-7 h-7 rounded-full text-2xl text-white bg-[#f85559] hover:bg-[#ff0004] text-center">
+                                    <a class=" " href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                </p>
+                                <p
+                                    class="w-7 h-7 rounded-full text-xl text-white bg-[#f85559] hover:bg-[#ff0004] text-center">
+                                    <a class=" " href=""><i class="fa-brands fa-twitter"></i></a>
+                                </p>
+                                <p
+                                    class="w-7 h-7 rounded-full text-xl text-white bg-[#f85559] hover:bg-[#ff0004] text-center">
+                                    <a class=" " href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- client end -->
+        <!-- choose us start -->
+        <section class="container m-auto mt-7 mb-7">
+            <h1 class=" text-center text-3xl font-extrabold mb-4">Why Choose Us</h1>
+            <p class=" text-center text-sm font-medium mb-10 px-4 max-w-[700px] m-auto">Contrary to popular belief, is
+                not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over
+                2000 years old.</p>
+            <div class="flex justify-center items-center lg:justify-between px-3 flex-col gap-x-2 gap-y-10  lg:flex-row ">
+                <div class="flex justify-center items-center lg:justify-end gap-2 gap-y-7 lg:w-[70%] flex-col-reverse lg:flex-row">
+                    <div class="lg:w-1/2 space-y-7">
+                        <!-- point one -->
+                        <div class="flex flex-col justify-center items-center lg:justify-start lg:items-start lg:flex-row gap-5 shadow-xl px-2 py-2">
+                            <p class="h-14 w-14 bg-[#1212121a] rounded-full flex items-center justify-center text-2xl ">
+                                <a href="">
+                                    <i class="fa-solid fa-people-group"></i>
+                                </a>
+                            </p>
+                            <divc class=" flex flex-col  gap-4 justify-center items-center lg:justify-start lg:items-start">
+                                <h1 class="text-[#121212  text-lg font-extrabold">Dedicated Team</h1>
+                                <hr class="w-[100px]">
+                                <p class="text-[#12121299] text-sm font-medium max-w-[250px]">Professional employees are
+                                    there for you to pick the most amazing and fresh fruits.</p>
+                        </div>
+                        <!-- point two -->
+                        <div class="flex flex-col justify-center items-center lg:justify-start lg:items-start lg:flex-row gap-5 shadow-xl px-2 py-2">
+                            <p class="h-14 w-14 bg-[#1212121a] rounded-full flex items-center justify-center text-2xl ">
+                                <a href="">
+                                    <i class="fa-solid fa-hand-holding-heart"></i>
+                                </a>
+                            </p>
+                            <divc class=" flex flex-col  gap-4 justify-center items-center lg:justify-start lg:items-start">
+                                <h1 class="text-[#121212  text-lg font-extrabold">Fresh is Best</h1>
+                                <hr class="w-[100px]">
+                                <p class="text-[#12121299] text-sm font-medium max-w-[250px]">Professional employees are
+                                    there for you to pick the most amazing and fresh fruits.</p>
+                        </div>
+                        <!-- point three -->
+                        <div class="flex flex-col justify-center items-center lg:justify-start lg:items-start lg:flex-row gap-5 shadow-xl px-2 py-2">
+                            <p class="h-14 w-14 bg-[#1212121a] rounded-full flex items-center justify-center text-2xl ">
+                                <a href="">
+                                    <i class="fa-solid fa-gifts"></i>
+                                </a>
+                            </p>
+                            <divc class=" flex flex-col  gap-4 justify-center items-center lg:justify-start lg:items-start">
+                                <h1 class="text-[#121212  text-lg font-extrabold">Gift Certificates</h1>
+                                <hr class="w-[100px]">
+                                <p class="text-[#12121299] text-sm font-medium max-w-[250px]">Professional employees are
+                                    there for you to pick the most amazing and fresh fruits.</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center">
+
+                    <img class="m-auto lg:ml-auto  " src="images/whychoose1.png" alt="">
+                </div>
+                </div>
+                <div class=" lg:w-[30%] space-y-7">
+                    <!-- point four -->
+                    <div class="flex flex-col justify-center items-center  lg:flex-row-reverse gap-5 lg:justify-start lg:items-start shadow-xl px-2 py-2">
+                        <p class="h-14 w-14 bg-[#1212121a] rounded-full flex items-center justify-center text-2xl">
+                            <a href="">
+                                <i class="fa-solid fa-seedling"></i>
+                            </a>
+                        </p>
+                        <div class=" flex flex-col justify-center items-center
+                        lg:justify-end lg:items-end gap-4">
+                            <h1 class="text-[#121212]  text-lg font-extrabold lg:text-right">Integrated Supplier</h1>
+                            <hr class="w-[100px] lg:ml-auto">
+                            <p class="text-[#12121299] text-sm font-medium max-w-[250px] lg:text-right">Professional
+                                employees are there for you to pick the most amazing and fresh fruits.</p>
+                    </div>
+                </div>
+                <!-- point five -->
+                <div class="flex flex-col justify-center items-center  lg:flex-row-reverse gap-5 lg:justify-start lg:items-start shadow-xl px-2 py-2">
+                    <p class="h-14 w-14 bg-[#1212121a] rounded-full flex items-center justify-center text-2xl">
+                        <a href="">
+                            <i class="fa-solid fa-ice-cream"></i>
+                        </a>
+                    </p>
+                    <div class=" flex flex-col justify-center items-center
+                    lg:justify-end lg:items-end gap-4">
+                        <h1 class="text-[#121212]  text-lg font-extrabold lg:text-right">Sustainable Practice</h1>
+                        <hr class="w-[100px] lg:ml-auto">
+                        <p class="text-[#12121299] text-sm font-medium max-w-[250px] lg:text-right">Professional
+                            employees are there for you to pick the most amazing and fresh fruits.</p>
+                </div>
+            </div>
+            <!-- point six -->
+            <div class="flex flex-col justify-center items-center  lg:flex-row-reverse gap-5 lg:justify-start lg:items-start shadow-xl px-2 py-2">
+                <p class="h-14 w-14 bg-[#1212121a] rounded-full flex items-center justify-center text-2xl">
+                    <a href="">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                    </a>
+                </p>
+                <div class=" flex flex-col justify-center items-center
+                lg:justify-end lg:items-end gap-4">
+                    <h1 class="text-[#121212]  text-lg font-extrabold lg:text-right">The Benefits Only</h1>
+                    <hr class="w-[100px] lg:ml-auto">
+                    <p class="text-[#12121299] text-sm font-medium max-w-[250px] lg:text-right">Professional
+                        employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+        </div>
+            </div>
+        </section>
+        <!-- choose us end -->
+    </main>
+
+   <!-- footer start -->
+   <footer class="footer footer-center py-24 p-10 bg-black text-base-content rounded text-white">
+
+    <div class="flex gap-x-2 justify-center items-center">
+        <img class="h-12 w-11" src="images/logo.png" alt="">
+        <h3 class="sm:text-white text-2xl font-bold">Fruit Burst</h3>
+    </div>
+    <div class="flex flex-wrap justify-center items-center gap-10 px-4 text-sm font-semibold">
+      <a class="link link-hover">Home</a> 
+      <a class="link link-hover">About us</a> 
+      <a class="link link-hover">Shop</a> 
+      <a class="link link-hover">All Fruits</a> 
+      <a class="link link-hover">Support</a> 
+      <a class="link link-hover">My Account</a>
+    </div> 
+    <div>
+      <div class="flex flex-wrap justify-center items-center gap-7 text-2xl">
+         <a class="text-[#ffffff]" href=""><i class="fa-brands fa-twitter"></i></a>
+         <a class="text-[#00aeff] href=""><i class="fa-brands fa-square-facebook"></i></a>
+         <a class="text-[#ff0000]" href=""><i class="fa-brands fa-youtube"></i></a>
+         <a class="text-[#36b0f7]" href=""><i class="fa-brands fa-linkedin-in"></i></a>
+         <a class="text-[#fd4ee6]" href=""><i class="fa-brands fa-square-instagram"></i></a>
+         <a class="text-[#ffffff]" href=""><i class="fa-brands fa-apple"></i></a>
+      </div>
+    </div> 
+    <div>
+      <small>Copyright © 2023 - All right reserved by ACME Industries Ltd</small>
+    </div>
+  </footer>
+   <!-- footer end -->
+</div>
+
+
+
+<div class="secondweb block sm:hidden">
+    <header class="container m-auto">
+        <!-- nav start -->
+        <nav>
+            <div class="navbar bg-base-100 lg:px-16">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 poppins ">
+                            <li><a class="text-xs">Home</a></li>
+                            <li><a class="text-xs">Services<i class="fa-regular fa-greater-than"></i>
+                                </a></li>
+                            <li><a class="text-xs">Cases
+                                    <i class="fa-regular fa-greater-than"></i>
+                                </a></li>
+                            <li><a class="text-xs">Blog
+                                    <i class="fa-regular fa-greater-than"></i>
+                                </a></li>
+                            <li><a class="text-xs">Contact Us
+                                    <i class="fa-regular fa-greater-than"></i>
+                                </a></li>
+                        </ul>
+                    </div>
+
+                    <img class="w-28 h-8   sm:w-36 sm:h-10" src="images/logo2.png" alt="">
+
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 poppins text-xs">
+                        <li><a>Home</a></li>
+                        <li><a>Services
+                                <i class="fa-regular fa-greater-than"></i>
+                            </a></li>
+                        <li><a>Cases
+                                <i class="fa-regular fa-greater-than"></i>
+                            </a></li>
+                        <li><a>Blog
+                                <i class="fa-regular fa-greater-than"></i>
+                            </a></li>
+                        <li><a>Contact Us
+                                <i class="fa-regular fa-greater-than"></i>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-[#B68C5A] text-xs w-max font-semibold poppins text-white rounded-lg
+                    sm:text-sm
+                    ">Free <br>
+                        Consultation</a>
+                </div>
+            </div>
+        </nav>
+        <!-- nav end -->
+
+        <!-- banner start -->
+        <section>
+            <div class="hero h-[calc(100vh-65px)]"
+                style="background-image: url(images/banner.png); background-repeat: no-repeat; background-attachment: fixed; border-radius: 8px;">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold">We Provide Effective Legal Solutions</h1>
+                        <p class="mb-5 poppins text-xs text-[#e7e7e7]">There are many variations of passages of Lorem
+                            Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                        </p>
+
+                        <div class="grid grid-cols-1
+                    justify-center items-center
+                    gap-y-5 md:grid-cols-2
+                     md:gap-x-80 ">
+                            <input class="p-3 rounded-lg
+                        w-[80%]  m-auto text-[#A0A0A0] poppins text-xs sm:w-[350px]" type="search" name=""
+                                placeholder="Search your services " id="">
+                            <button
+                                class="btn bg-[#B68C5A] text-sm font-semibold poppins text-white rounded-lg w-max border-none px-7 m-auto">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- banner end -->
+
+
+    </header>
+
+    <main>
+        <!-- law system start -->
+        <section>
+            <div>
+                <h1 class=" text-[#414040] text-center text-3xl font-extrabold  pt-6">The Legal Practice Area</h1>
+                <p class="mb-5 poppins text-xs text-[#747272] text-center m-auto pt-6  px-7  max-w-[600px]  ">There are
+                    many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+                    some form, by injected humour.</p>
+            </div>
+            <div class="grid grid-cols-1   justify-center items-center gap-x-2 gap-y-2 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- card one -->
+                <div
+                    class=" flex m-auto flex-col justify-center items-center w-72  px-7 py-10 hover:bg-gradient-to-b from-[#F3F3F3]">
+                    <img class=" w-16 h-16 mb-5" src="images/1.png" alt="">
+                    <h1 class=" text-[#414040] text-center text-2xl font-extrabold mb-5">Business Law</h1>
+                    <p class="text-[#707070] text-center text-xs mb-5">There are many variations of passages of Lorem
+                        Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <button class="w-8 h-8  rounded-full  bg-[#B68C5A]">
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                    </button>
+                </div>
+                <!-- card two -->
+                <div
+                    class=" flex m-auto flex-col justify-center items-center w-72  px-7 py-10 hover:bg-gradient-to-b from-[#F3F3F3]">
+                    <img class=" w-16 h-16 mb-5" src="images/2.png" alt="">
+                    <h1 class=" text-[#414040] text-center text-2xl font-extrabold mb-5">Criminal Law</h1>
+                    <p class="text-[#707070] text-center text-xs mb-5">There are many variations of passages of Lorem
+                        Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <button class="w-8 h-8  rounded-full  bg-[#B68C5A]">
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                    </button>
+                </div>
+                <!-- card three -->
+                <div
+                    class=" flex m-auto flex-col justify-center items-center w-72  px-7 py-10 hover:bg-gradient-to-b from-[#F3F3F3]">
+                    <img class=" w-16 h-16 mb-5" src="images/3.png" alt="">
+                    <h1 class=" text-[#414040] text-center text-2xl font-extrabold mb-5">Child Support</h1>
+                    <p class="text-[#707070] text-center text-xs mb-5">There are many variations of passages of Lorem
+                        Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <button class="w-8 h-8  rounded-full  bg-[#B68C5A]">
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                    </button>
+                </div>
+                <!-- card four -->
+                <div
+                    class=" flex m-auto flex-col justify-center items-center w-72  px-7 py-10 hover:bg-gradient-to-b from-[#F3F3F3]">
+                    <img class=" w-16 h-16 mb-5" src="images/4.png" alt="">
+                    <h1 class=" text-[#414040] text-center text-2xl font-extrabold mb-5">Education Law</h1>
+                    <p class="text-[#707070] text-center text-xs mb-5">There are many variations of passages of Lorem
+                        Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <button class="w-8 h-8  rounded-full  bg-[#B68C5A]">
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                    </button>
+                </div>
+                <!-- card five -->
+                <div
+                    class=" flex m-auto flex-col justify-center items-center w-72  px-7 py-10 hover:bg-gradient-to-b from-[#F3F3F3]">
+                    <img class=" w-16 h-16 mb-5" src="images/5.png" alt="">
+                    <h1 class=" text-[#414040] text-center text-2xl font-extrabold mb-5">Divorce Law</h1>
+                    <p class="text-[#707070] text-center text-xs mb-5">There are many variations of passages of Lorem
+                        Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <button class="w-8 h-8  rounded-full  bg-[#B68C5A]">
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                    </button>
+                </div>
+                <!-- card six -->
+                <div
+                    class=" flex m-auto flex-col justify-center items-center w-72  px-7 py-10 hover:bg-gradient-to-b from-[#F3F3F3]">
+                    <img class=" w-16 h-16 mb-5" src="images/6.png" alt="">
+                    <h1 class=" text-[#414040] text-center text-2xl font-extrabold mb-5">Tax Law</h1>
+                    <p class="text-[#707070] text-center text-xs mb-5">There are many variations of passages of Lorem
+                        Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <button class="w-8 h-8  rounded-full  bg-[#B68C5A]">
+                        <i class="fa-solid fa-arrow-right text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- law system end -->
+
+        <!-- slider start -->
+        <section>
+            <div>
+                <h1 class=" text-[#414040] text-center text-3xl font-extrabold  pt-6">What Our Client Say</h1>
+                <p class="mb-5 poppins text-xs text-[#747272] text-center m-auto pt-6  px-7  max-w-[600px]  ">There are
+                    many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+                    some form, by injected humour.</p>
+            </div>
+            <div class="carousel w-full h-[100vh]">
+                <!-- slider one -->
+                <div id="slide5"
+                    style="background-image: url('images/slider-0.jpg'); background-repeat: no-repeat;  background-size:cover;  "
+                    class="carousel-item relative w-full ">
+                    <div style="height:100%; width: 100%; background-color: rgba(0, 0, 0, 0.578);" class="flex">
+                        <div class="flex flex-col justify-center items-center gap-y-4 m-auto  ">
+                            <img class="w-[100px] bg-[#d7d5d5] rounded-full border-[3px] border-white"
+                                src="images/client-1.png" alt="">
+                            <h1 class="text-white text-lg font-extrabold">Muhammad Tahim</h1>
+                            <p class="text-white text-xs ">UIX Designer</p>
+                            <p class="mb-5 text-xs text-white text-center m-auto pt-2  px-7  max-w-[600px]  ">Contrary
+                                to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                                classical Latin literature from 45 BC, making it over 2000 years old. Richard
+                                McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
+                                the more obscure Latin words, consectetur.</p>
+                        </div>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide8" class="btn btn-circle">❮</a>
+                        <a href="#slide6" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slider two -->
+                <div id="slide6"
+                    style="background-image: url('images/slider-1.jpg'); background-repeat: no-repeat; background-size:cover;  "
+                    class="carousel-item relative w-full">
+
+                    <div style="height:100%; width: 100%; background-color: rgba(0, 0, 0, 0.578);" class="flex">
+                        <div class="flex flex-col justify-center items-center gap-y-4 m-auto  ">
+                            <img class="w-[100px] bg-[#d7d5d5] rounded-full border-[3px] border-white"
+                                src="images/client-2.png" alt="">
+                            <h1 class="text-white text-lg font-extrabold">Muhammad Mahadi</h1>
+                            <p class="text-white text-xs ">Web Designer</p>
+                            <p class="mb-5 text-xs text-white text-center m-auto pt-2  px-7  max-w-[600px]  ">Contrary
+                                to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                                classical Latin literature from 45 BC, making it over 2000 years old. Richard
+                                McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
+                                the more obscure Latin words, consectetur.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide5" class="btn btn-circle">❮</a>
+                        <a href="#slide7" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slider three -->
+                <div id="slide7"
+                    style="background-image: url('images/slider-2.jpg'); background-repeat: no-repeat;  background-size:cover;  "
+                    class="carousel-item relative w-full">
+
+                    <div style="height:100%; width: 100%; background-color: rgba(0, 0, 0, 0.578);" class="flex">
+                        <div class="flex flex-col justify-center items-center gap-y-4 m-auto  ">
+                            <img class="w-[100px] bg-[#d7d5d5] rounded-full border-[3px] border-white"
+                                src="images/client-3.png" alt="">
+                            <h1 class="text-white text-lg font-extrabold">Muhammad Mahim</h1>
+                            <p class="text-white text-xs ">Web Developer</p>
+                            <p class="mb-5 text-xs text-white text-center m-auto pt-2  px-7  max-w-[600px]  ">Contrary
+                                to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                                classical Latin literature from 45 BC, making it over 2000 years old. Richard
+                                McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
+                                the more obscure Latin words, consectetur.</p>
+                        </div>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide6" class="btn btn-circle">❮</a>
+                        <a href="#slide8" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slider 4  -->
+                <div id="slide8"
+                    style="background-image: url('images/slider-3.jpg'); background-repeat: no-repeat;  background-size:cover;  "
+                    class="carousel-item relative w-full">
+
+
+                    <div style="height:100%; width: 100%; background-color: rgba(0, 0, 0, 0.578);" class="flex">
+                        <div class="flex flex-col justify-center items-center gap-y-4 m-auto  ">
+                            <img class="w-[100px] bg-[#d7d5d5] rounded-full border-[3px] border-white"
+                                src="images/client-4.png" alt="">
+                            <h1 class="text-white text-lg font-extrabold">Muhammad Hassan</h1>
+                            <p class="text-white text-xs ">Video Editor</p>
+                            <p class="mb-5 text-xs text-white text-center m-auto pt-2  px-7  max-w-[600px]  ">Contrary
+                                to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                                classical Latin literature from 45 BC, making it over 2000 years old. Richard
+                                McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
+                                the more obscure Latin words, consectetur.</p>
+                        </div>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide7" class="btn btn-circle">❮</a>
+                        <a href="#slide5" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- slider end -->
+
+        <!-- faq start -->
+        <section>
+
+            <div>
+                <h1 class=" text-[#414040] text-center text-3xl font-extrabold  pt-6">Frequently Asked Any Questions
+                </h1>
+                <p class="mb-5 poppins text-xs text-[#747272] text-center m-auto pt-6  px-7  max-w-[600px]  ">There are
+                    many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+                    some form, by injected humour.</p>
+            </div>
+            <div class="hero min-h-screen ">
+                <div class="hero-content flex-col lg:flex-row-reverse gap-y-10 gap-x-10">
+                    <img src="images/faq.png" class=" rounded-lg w-3/4 lg:w-2/5" />
+                    <div class="flex flex-col gap-4">
+                        <div class="collapse collapse-plus shadow-2xl ">
+                            <input type="radio" name="my-accordion-3" checked="checked" />
+                            <div class="collapse-title text-xl font-medium">
+                                <h4 class=" text-xl font-extrabold">Are application fee waivers available?</h4>
+                            </div>
+                            <div class="collapse-content">
+                                <p class="text-xs max-w-[400px]">There are many variations of passages of Lorem Ipsum
+                                    available, but the majority have suffered alteration in some form, by injected
+                                    humour,.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus shadow-2xl">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl font-medium">
+                                <h4 class=" text-xl font-extrabold">Are application fee waivers available?</h4>
+                            </div>
+                            <div class="collapse-content">
+                                <p class="text-xs max-w-[400px]">There are many variations of passages of Lorem Ipsum
+                                    available, but the majority have suffered alteration in some form, by injected
+                                    humour,.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus shadow-2xl">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl font-medium">
+                                <h4 class=" text-xl font-extrabold">Are application fee waivers available?</h4>
+                            </div>
+                            <div class="collapse-content">
+                                <p class="text-xs max-w-[400px]">There are many variations of passages of Lorem Ipsum
+                                    available, but the majority have suffered alteration in some form, by injected
+                                    humour,.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus shadow-2xl">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl font-medium">
+                                <h4 class=" text-xl font-extrabold">Are application fee waivers available?</h4>
+                            </div>
+                            <div class="collapse-content">
+                                <p class="text-xs max-w-[400px]">There are many variations of passages of Lorem Ipsum
+                                    available, but the majority have suffered alteration in some form, by injected
+                                    humour,.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- faq end -->
+
+        <!-- contact start -->
+        <section>
+            <div>
+                <h1 class=" text-[#414040] text-center text-3xl font-extrabold  pt-6">Contact With Us</h1>
+                <p class="mb-5 poppins text-xs text-[#747272] text-center m-auto pt-6  px-7  max-w-[600px]  ">There are
+                    many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+                    some form, by injected humour.</p>
+            </div>
+
+
+            <div class="hero min-h-screen ">
+                <div class="hero-content flex-col gap-20 lg:flex-row ">
+                    <div class="grid grid-cols-1 sm:grid-cols-2">
+                        <!-- address -->
+                        <div
+                            class="flex flex-col gap-2 justify-center items-center  w-56 h-56 bg-[#F3F3F3] border-r-[1px] border-b-[1px] border-[#868686] hover:border-black hover:bg-[#d6d4d4] ">
+
+                            <img width="32px" src="images/location.png" alt="">
+                            <h1 class=" text-center text-lg text-[#414040] font-extrabold
+                        ">Address</h1>
+                            <p class="text-xs text-center text-[#707070]">A108 Adam Street,<br>
+                                New York, NY 535022</p>
+                        </div>
+                        <!-- call -->
+                        <div
+                            class="flex flex-col gap-2 justify-center items-center  w-56 h-56 bg-[#F3F3F3] border-l-[1px] border-b-[1px] border-[#868686] hover:border-black hover:bg-[#d6d4d4]">
+
+                            <img width="32px" src="images/call.png" alt="">
+                            <h1 class=" text-center text-lg text-[#414040] font-extrabold
+                        ">Call Us</h1>
+                            <p class="text-xs text-center text-[#707070]">+88 01750 00 00 00 <br>
+                                +88 01750 00 00 00</p>
+                        </div>
+                        <!-- email -->
+                        <div
+                            class="flex flex-col gap-2 justify-center items-center  w-56 h-56 bg-[#F3F3F3] border-r-[1px] border-t-[1px] border-[#868686] hover:border-black hover:bg-[#d6d4d4]">
+
+                            <img width="32px" src="images/email.png" alt="">
+                            <h1 class=" text-center text-lg text-[#414040] font-extrabold
+                        ">Email Us</h1>
+                            <p class="text-xs text-center text-[#707070]">info@gmail.com  <br>
+                                info@gmail.com</p>
+                        </div>
+                        <!-- working -->
+                        <div
+                            class="flex flex-col gap-2 justify-center items-center  w-56 h-56 bg-[#F3F3F3] border-l-[1px] border-t-[1px] border-[#868686] hover:border-black hover:bg-[#d6d4d4]">
+
+                            <img width="32px" src="images/time.png" alt="">
+                            <h1 class=" text-center text-lg text-[#414040] font-extrabold
+                        ">Working Hours</h1>
+                            <p class="text-xs text-center text-[#707070]">Mon-Fri: 9AM to 5PM <br>
+                                Sunday: 9AM to 1 PM</p>
+                        </div>
+
+                    </div>
+                    <div class="flex-1 flex flex-col gap-4">
+                        <input class="w-[300px] p-2 bg-[#F3F3F3] rounded-lg" type="text" name="" id=""
+                            placeholder="Your Name">
+                        <input class="w-[300px] p-2 bg-[#F3F3F3] rounded-lg" type="email" name="" id=""
+                            placeholder="Your Email">
+                        <input class="w-[300px] p-2 bg-[#F3F3F3] rounded-lg" type="text" placeholder="Subject">
+
+                        <textarea name="" id="" cols="30" placeholder="Your Message" rows="5"
+                            class="w-[300px] p-2 bg-[#F3F3F3] rounded-lg"></textarea>
+                        <button class="btn bg-[#B68C5A] text-xs  font-semibold poppins text-white rounded-lg
+                    
+                    ">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact end -->
+    </main>
+    <!-- footer start -->
+    <footer class="footer p-10 bg-[#111] text-justify text-base-content justify-around  py-24 ">
+        <div class="max-w-[250px]  md:m-auto">
+            <img width="110px" src="images/logo1.png" alt="">
+            <p class="md:max-w-[200px] md:min-w-[150px] text-xs text-[#CFCFCF]">There are many variations of passages of
+                Lorem Ipsum
+                available, but the majority have suffered alteration in some form, by injected humour.</p>
+        </div>
+        <div class="max-w-[250px]">
+            <h1 class="text-white text-2xl font-extrabold">Usefull Link</h1>
+            <li class="flex flex-col gap-y-3 text-[#CFCFCF] text-xs list-none">
+                <a class="link link-hover">Home</a>
+                <a class="link link-hover">About Us</a>
+                <a class="link link-hover">Cases</a>
+                <a class="link link-hover">Blog</a>
+                <a class="link link-hover">Contact Us</a>
+            </li>
+        </div>
+        <div class="max-w-[250px] md:min-w-[150px]">
+            <h1 class="text-white text-2xl font-extrabold">Contact Now</h1>
+            <p class="text-xs text-[#CFCFCF]  pb-3">555 4th 5t NW, Washington <br>
+                DC 20530, United States</p>
+            <p class="text-xs text-[#CFCFCF] pb-3">+88 01750 000 000 <br>
+                +88 01750 000 000</p>
+            <p class="text-xs text-[#CFCFCF] pb-3 ">info@gmail.com <br>
+                info@gmail.com</p>
+        </div>
+        <div class="md:mx-w-[250] lg:max-w-[280px]">
+            <h1 class="text-white text-2xl font-extrabold">Subscribe</h1>
+            <div class="form-control w-80">
+                <label class="label">
+                    <p class="max-w-[200px] text-xs text-[#CFCFCF] text-left">Subscribe for our latest & Articles. We
+                        Won’t Give You Spam Mails</p>
+                </label>
+                <div class="relative flex gap-0  ">
+                    <input type="text" placeholder="Email Address"
+                        class="input input-bordered w-full pr-16 bg-white rounded-l-lg rounded-r-none md:w-[250px] lg:w-[280px]" />
+                    <button
+                        class="btn  top-0 right-0  bg-[#B68C5A] text-base w-max font-semibold poppins text-white rounded-lg rounded-l-none">
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+</div>
+
+</body>
+
+</html>
